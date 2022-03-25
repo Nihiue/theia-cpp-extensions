@@ -1,10 +1,8 @@
 {
-  "name": "mw-theia-cpp-debug",
-  "version": "1.18.0",
+  "name": "@theia/cpp-debug",
+  "version": "1.19.0",
   "description": "Theia - C/C++ Debug Extension",
   "dependencies": {
-    "@theia/core": "latest",
-    "@theia/debug": "latest",
     "long": "^4.0.0",
     "vscode-debugprotocol": "^1.48.0"
   },
@@ -45,7 +43,9 @@
     "test": "mocha --opts ../../configs/mocha.opts \"./lib/**/*.*spec.js\""
   },
   "devDependencies": {
-    "@types/long": "^4.0.0"
+    "@types/long": "^4.0.0",
+    "@theia/core": "1.19.0",
+    "@theia/debug": "1.19.0"
   },
   "nyc": {
     "extends": "../../configs/nyc.json"
